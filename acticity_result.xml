@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 상단 제목 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6200EE"
+        android:text="투표 결과"
+        android:textColor="#FFFFFF"
+        android:padding="15dp"
+        android:textSize="20sp"
+        android:gravity="center" />
+
+    <!-- 최다 득표 제목 -->
+    <TextView
+        android:id="@+id/tvResultTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="그림 제목"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <!-- 최다 득표 그림 -->
+    <ImageView
+        android:id="@+id/ivResult"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter" />
+
+    <!-- 투표 목록 전체 영역 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <!-- 제목 목록 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView android:id="@+id/tvName1" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/tvName2" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/tvName3" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/tvName4" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/tvName5" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/tvName6" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/tvName7" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/tvName8" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:id="@+id/tvName9" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <!-- 별점 목록 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RatingBar
+                android:id="@+id/rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1" />
+            <RatingBar android:id="@+id/rb2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:stepSize="1"/>
+            <RatingBar android:id="@+id/rb3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:stepSize="1"/>
+            <RatingBar android:id="@+id/rb4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:stepSize="1"/>
+            <RatingBar android:id="@+id/rb5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:stepSize="1"/>
+            <RatingBar android:id="@+id/rb6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:stepSize="1"/>
+            <RatingBar android:id="@+id/rb7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:stepSize="1"/>
+            <RatingBar android:id="@+id/rb8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:stepSize="1"/>
+            <RatingBar android:id="@+id/rb9" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:stepSize="1"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 하단 버튼 -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="돌아가기"
+        android:background="#6200EE"
+        android:textColor="#FFFFFF"
+        android:padding="15dp"
+        android:textSize="18sp" />
+</LinearLayout>
